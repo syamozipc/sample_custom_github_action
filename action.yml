@@ -3,5 +3,6 @@ description: A sample action to be called from other repository.
 runs:
   using: "composite"
   steps:
-    - run: echo "This is a sample action to be called from other repository."
+    - name: Call sample custom action
+      run: echo "This is a sample action to be called from other repository."
       shell: bash
